@@ -19,9 +19,14 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+  <div id="decoration">
+    <div class="cir cir1"></div>
+    <div class="cir cir2"></div>
+    <div class="cir cir3"></div>
+  </div>
   <nav class="container" id="navigation">
     <div class="inner">
-      <a href="" target="_blank">
+      <a href="#banner">
         <img src="./images/icons/logo.svg" alt="logo">
       </a>
       <ul class="navs">
@@ -57,7 +62,7 @@
   <div class="container-full" id="banner">
     <nav class="container">
       <div class="inner">
-        <a href="" target="_blank">
+        <a href="#banner">
           <img src="./images/icons/logo.svg" alt="logo">
         </a>
         <ul class="navs">
@@ -101,42 +106,45 @@
             </div>
           </div>
           <div class="btns">
-            <div class="btn" data-type="1"></div>
-            <div class="btn" data-type="2"></div>
-            <div class="btn" data-type="3"></div>
+            <div class="btn banner_btn show" data-type="1"></div>
+            <div class="btn banner_btn" data-type="2"></div>
+            <div class="btn banner_btn" data-type="3"></div>
           </div>
         </div>
-        <div class="textBox">
+        <div class="textBox trans" data-ratio="-2">
           <h1>以純天然的原物料<br>俘獲您的味蕾</h1>
           <h6>蛋糕原料產自當地果園，新鮮物料當日配送，使用同一牧場乳源的新鮮鮮乳，給您最自然的美味</h6>
           <div class="btn">
-            <h6>瀏覽更多</h6>
-            <img src="./images/icons/arrow.svg" alt="">
+            <a href="#advantage">
+              <h6>瀏覽更多</h6>
+            </a>
+            <img id="arrow-black" src="./images/icons/arrow.svg" alt="">
+            <img id="arrow-white" src="./images/icons/arrow_white.svg" alt="">
           </div>
         </div>
       </div>
     </div>
   </div>
-  <main class="container-full">
+  <div class="container-full" id="advantage">
     <div class="inner">
-      <div class="textBox">
+      <div class="textBox tagged showIn">
         <h3>最安心的原料</h3>
         <h6>源自有機果農的健康果物，單一牧場單一乳源採用，每一口都是最天然的美味。</h6>
       </div>
-      <div class="imgBox right">
+      <div class="imgBox right tagged rightIn">
         <div class="img" style="--background: url('../images/section_1.jpg'); --left: 0%; --top: 80%"></div>
       </div>
     </div>
     <div class="inner">
-      <div class="imgBox left">
+      <div class="imgBox left tagged leftIn">
         <div class="img" style="--background: url('../images/section_2.jpg'); --left: 0%; --top: 30%"></div>
       </div>
-      <div class="textBox">
+      <div class="textBox tagged showIn">
         <h3>最美味的杯子蛋糕</h3>
         <h6>長期致力於杯子蛋糕的研發，多樣的組合搭配與糕點師傅們的用心堅持，製作最美味的杯子蛋糕。</h6>
       </div>
     </div>
-  </main>
+  </div>
   <div class="container-full" id="topSales">
     <div class="inner">
       <div class="title">
@@ -171,36 +179,38 @@
         <h2>更多選擇 More Cakes</h2>
       </div>
       <div class="items">
-        <div class="box" style="--background: url('../images/more_1.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/more_1.jpg'); --left: 50%; --top: 50%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
-        <div class="box" style="--background: url('../images/more_2.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/more_2.jpg'); --left: 50%; --top: 50%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
-        <div class="box" style="--background: url('../images/more_3.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/more_3.jpg'); --left: 50%; --top: 50%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
-        <div class="box" style="--background: url('../images/more_4.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/more_4.jpg'); --left: 50%; --top: 50%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
-        <div class="box" style="--background: url('../images/more_5.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/more_5.jpg'); --left: 50%; --top: 70%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
-        <div class="box" style="--background: url('../images/more_6.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/season_2.jpg'); --left: 50%; --top: 50%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
-        <div class="box" style="--background: url('../images/more_7.jpg'); --left: 50%; --top: 50%">
-          <h5>草莓香草卡普</h5>
+        <div class="box" style="--background: url('../images/more_7.jpg'); --left: 50%; --top: 50%; --size: 100%">
+          <h4>草莓香草卡普</h4>
           <h6>產自苗栗大湖的鮮甜草莓，酸甜的好滋味讓您愛不釋手。</h6>
         </div>
         <div class="box last">
-          <h5>全部品項</h5>
+          <a href="">
+            <h5>全部品項</h5>
+          </a>
           <img src="./images/icons/arrow.svg" alt="">
         </div>
       </div>
@@ -231,5 +241,6 @@
     </div>
   </footer>
   <script src="./js/basic.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
