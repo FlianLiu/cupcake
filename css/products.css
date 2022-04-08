@@ -1,0 +1,136 @@
+/* banner */
+#banner {
+  flex-direction: column;
+}
+#banner .main {
+  height: calc(100vh - 100px);
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+#banner .main::before {
+  content: "Chocoholic";
+  display: block;
+  width: 100vw;
+  color: var(--decoration-text);
+  font-size: 18vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-11deg);
+  animation: showIn .5s .3s ease forwards;
+}
+#banner .main .inner > h2, #banner .main .inner > h6, #banner .main::before, #banner .items {
+  opacity: 0;
+}
+#banner .main .inner > h2, #banner .main .inner > h6 {
+  animation: showIn .5s .7s ease forwards;
+}
+#banner .items {
+  animation: showIn .5s 1s ease forwards;
+}
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* common attributes */
+#seasonLimit {
+  overflow: hidden;
+  margin-bottom: 10vh;
+}
+#seasonLimit::before {
+  content: "Season Limited";
+  display: flex;
+  width: 150vw;
+  color: var(--decoration-text);
+  font-size: 15vw;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(-11deg);
+}
+.container-full > .inner, .container-full .main .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-full .inner > h6 {
+  margin-top: 15px;
+  margin-bottom: 10vh;
+}
+.container-full .items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-full .items .box {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 15px;
+  background-image: var(--background);
+  background-position: var(--left) var(--top);
+  background-size: var(--size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+}
+.container-full .items .box:hover {
+  background-size: 130%;
+}
+.container-full .items .box::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.container-full .items .box:hover::before {
+  background-color: var(--items-mask);
+  transition: background-color .3s .1s;
+}
+.container-full .items .box h4 {
+  margin-bottom: 20px
+}
+.container-full .items .box h4, .container-full .items .box h6 {
+  opacity: 0;
+}
+.container-full .items .box h4, .container-full .items .box h6 {
+  color: var(--main-white-color);
+}
+.container-full .items .box:hover h4, .container-full .items .box:hover h6 {
+  opacity: 1;
+  transition: opacity .3s .3s;
+}
+
+/* more cakes */
+#moreCakes {
+  margin-bottom: 20vh;
+}
+#moreCakes .items .box {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#moreCakes .items .box:hover {
+  background-size: 120%;
+}
+#moreCakes .items .box::before {
+  width: 0;
+  height: 0;
+}
+#moreCakes .items .box:hover::before {
+  background-color: none;
+}

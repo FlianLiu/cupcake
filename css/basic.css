@@ -2,6 +2,7 @@
 
 /* initial */
 :root {
+  --navbar-color: rgba(245, 245, 245, 0.99);
   --main-white-color: #F5F5F5;
   --text-color: #333333;
   --text-color-hover: rgba(51, 51, 51,.7);
@@ -9,7 +10,7 @@
   --decoration-color: rgba(196, 196, 196, 0.3);
   --decoration-text: rgba(0, 0, 0, 0.03);
   --footer-mask: rgba(0, 0, 0, .8);
-  --items-mask: rgba(0, 0, 0, .8);
+  --items-mask: rgba(51, 51, 51, 0.95);
 }
 * {
   margin: 0;
@@ -85,9 +86,9 @@ h6 {
 .tagged.showIn {
   opacity: 0;
 }
-.tagged.scrolled.rightIn, .tagged.scrolled.leftIn {
+.tagged.scrolled.rightIn, .tagged.scrolled.leftIn, .tagged.scrolled.downIn {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translate(0px, 0px);
   transition: all .5s ease;
   transition-property: transform, opacity;
 }
@@ -95,6 +96,13 @@ h6 {
   opacity: 1;
   transition: all .5s ease;
   transition-property: opacity;
+}
+.tagged .delay {
+  opacity: 0;
+  transition: opacity .5s .5s;
+}
+.tagged.scrolled .delay {
+  opacity: 1;
 }
 .inner {
   width: 1200px;
@@ -109,10 +117,10 @@ h6 {
 /* navigation */
 nav {
   height: 100px;
-  background-color: var(--main-white-color);
   z-index: 15;
 }
 nav#navigation {
+  background-color: var(--navbar-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -153,6 +161,9 @@ nav ul li::before {
 nav ul li:hover::before {
   width: 80%;
 }
+nav ul li.recent:hover::before {
+  width: 0;
+}
 nav ul li h6 {
   font-weight: bold;
 }
@@ -165,6 +176,9 @@ nav ul li h6, nav .icons a img {
 }
 nav ul li:hover h6 {
   opacity: .9;
+}
+nav ul li.recent h6, nav ul li.recent:hover h6 {
+  opacity: .6;
 }
 nav .icons a img:hover {
   opacity: 0.5;

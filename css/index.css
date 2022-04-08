@@ -197,7 +197,7 @@
 }
 #topSales::before {
   content: "Top Sales";
-  display: flex;
+  display: block;
   width: 100vw;
   color: var(--decoration-text);
   font-size: 20vw;
