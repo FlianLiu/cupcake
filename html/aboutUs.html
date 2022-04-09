@@ -90,8 +90,41 @@
         </div>
       </div>
     </nav>
-    <div class="container main">
-      
+    <div class="inner main">
+      <div class="textBox">
+        <h1>陳怪魚</h1>
+        <h5>行政主廚 Chef</h5>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit tellus ultricies nunc, egestas semper libero. Tellus at eu mattis mauris lectus a.</h6>
+      </div>
+      <div class="imgBox">
+        <div class="decoration">
+          <div class="cir cir1 trans" data-ratio="-10"></div>
+          <div class="cir cir2 trans" data-ratio="-20"></div>
+        </div>
+        <div class="img trans" style="--background: url('../images/intro_1.jpg'); --left: 50%; --top: 65%"  data-ratio="3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container-full tagged showIn" id="message">
+    <div class="inner">
+      <div class="img" style="--background: url('../images/form.jpg'); --left: 50%; --top: 65%"></div>
+      <div class="textBox">
+        <div class="title">
+          <h2>聯繫我們 Contact us</h2>
+          <h6>致力於製作最天然美味的杯子蛋糕，織譜美味的新樂章。</h6>
+        </div>
+        <form action="">
+          <div class="inputs">
+            <input class="input" type="text" placeholder="單位名稱" required>
+            <input class="input" type="text" placeholder="e-mail" required pattern="[a-zA-Z\0-9]{1,64}@[a-zA-Z\.]{1,64}">
+          </div>
+          <textarea class="input" name="message" placeholder="填寫意見..." required></textarea>
+          <div id="btns">
+            <input value="清空表單" type="reset" class="btn reset" id="submit">
+            <input value="送出表單" type="submit" class="btn submit" onclick="checkValid()">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <footer class="container">
@@ -119,5 +152,15 @@
     </div>
   </footer>
   <script src="../js/basic.js"></script>
+  <script>
+    const submit = document.getElementById('submit');
+    const inputs = document.getElementsByClassName('input');
+    function checkValid() {
+      for(let i=0; i<inputs.length; i++) {
+        if (!inputs[i].checkValidity()) return
+      }
+      window.alert("您填寫的表單已送出! 預計會三個工作天內回復您的訊息!");
+    }
+  </script>
 </body>
 </html>

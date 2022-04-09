@@ -13,6 +13,9 @@
   --footer-mask: rgba(0, 0, 0, .8);
   --items-mask: rgba(51, 51, 51, 0.95);
   --tag-color: #FF4C4C;
+  --form-gray: rgba(245, 245, 245, 1);
+  --form-focus: rgba(51, 51, 51, 0.01);
+  --form-invalid: rgb(172, 172, 172);
 }
 *, *::before, *::after {
   margin: 0;
