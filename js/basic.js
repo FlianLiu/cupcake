@@ -6,8 +6,8 @@ let delta;
 for( let i=0; i<tags.length; i++) {
   let offsetTop = 0;
   function computeOffset(element) {
+    offsetTop += element.offsetTop;
     if (element.offsetParent) {
-      offsetTop += element.offsetParent.offsetTop;
       computeOffset(element.offsetParent);
     }
   }

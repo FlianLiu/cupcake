@@ -21,8 +21,8 @@
 <body>
   <div id="decoration">
     <div class="cir cir1"></div>
-    <div class="cir cir2"></div>
-    <div class="cir cir3"></div>
+    <div class="cir cir2 tagged showIn"></div>
+    <div class="cir cir3 tagged showIn"></div>
   </div>
   <nav class="container" id="navigation">
     <div class="inner">
@@ -99,16 +99,16 @@
       <div class="inner">
         <div class="imgBox">
           <div class="imgs">
-            <div class="wrapper">
+            <div class="wrapper" data-show-img="1">
               <div class="img" style="--background: url('../images/banner_1.jpg')"></div>
               <div class="img" style="--background: url('../images/banner_2.jpg')"></div>
               <div class="img" style="--background: url('../images/banner_3.jpg')"></div>
             </div>
           </div>
           <div class="btns">
-            <div class="btn banner_btn show" data-type="1"></div>
-            <div class="btn banner_btn" data-type="2"></div>
-            <div class="btn banner_btn" data-type="3"></div>
+            <div class="btn banner_btn show" data-order="1"></div>
+            <div class="btn banner_btn" data-order="2"></div>
+            <div class="btn banner_btn" data-order="3"></div>
           </div>
         </div>
         <div class="textBox trans" data-ratio="-2">
