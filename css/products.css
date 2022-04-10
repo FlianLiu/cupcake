@@ -54,6 +54,9 @@
   left: 70%;
   transform: translate(-50%, -50%) rotate(-11deg);
 }
+#seasonLimit .inner > h6 {
+  text-align: center;
+}
 #seasonLimit .inner > h2, #seasonLimit .inner > h6, #seasonLimit::before, #seasonLimit .items {
   opacity: 0;
 }
@@ -193,5 +196,129 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* RWD */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  #banner .items .box, #seasonLimit .items .box {
+    width: 330px;
+    height: 330px;
+  }
+  #moreCakes .items .box {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  #banner .items .box, #seasonLimit .items .box {
+    width: 29vw;
+    height: 29vw;
+    padding: 0 30px;
+  }
+  #banner .inner > h6, #seasonLimit .inner > h6, #moreCakes .inner > h6 {
+    margin-top: 0;
+    margin-bottom: 7vh;
+  }
+  #moreCakes .items .box {
+    width: 21vw;
+    height: 21vw;
+    margin-bottom: 2vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 15px;
+  }
+  .container-full {
+    min-height: 450px;
+    height: auto;
+  }
+  #banner .items .box, #seasonLimit .items .box {
+    width: 29vw;
+    height: 29vw;
+    padding: 0 30px;
+  }
+  #banner .inner > h6, #seasonLimit .inner > h6, #moreCakes .inner > h6 {
+    margin-top: 0;
+    margin-bottom: 7vh;
+  }
+  #moreCakes .items .box {
+    width: 21vw;
+    height: 21vw;
+    margin-bottom: 2vw;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 15px;
+  }
+  #banner, #seasonLimit {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  #banner .main {
+    height: auto;
+    padding-top: 50px;
+  }
+  #banner .items, #seasonLimit .items {
+    flex-direction: column;
+    align-items: center;
+  }
+  #banner .items .box, #seasonLimit .items .box {
+    width: 100%;
+    height: 40vw;
+  }
+  #banner .items .box h6, #seasonLimit .items .box h6 {
+    width: 80%;
+  }
+  #banner .inner > h6, #seasonLimit .inner > h6, #moreCakes .inner > h6 {
+    margin-top: 0;
+    margin-bottom: 7vh;
+  }
+  #moreCakes {
+    height: auto;
+  }
+  #moreCakes .items .box {
+    width: 42vw;
+    height: 42vw;
+    margin-bottom: 2vw;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  html {
+    font-size: 15px;
+  }
+  #banner, #seasonLimit {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  #banner .main {
+    height: auto;
+    padding-top: 50px;
+  }
+  #banner .items, #seasonLimit .items {
+    flex-direction: column;
+    align-items: center;
+  }
+  #banner .items .box, #seasonLimit .items .box {
+    width: 100%;
+    height: 40vw;
+  }
+  #banner .items .box h6, #seasonLimit .items .box h6 {
+    width: 80%;
+  }
+  #banner .inner > h6, #seasonLimit .inner > h6, #moreCakes .inner > h6 {
+    margin-top: 0;
+    margin-bottom: 7vh;
+  }
+  #moreCakes {
+    height: auto;
+  }
+  #moreCakes .items .box {
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 4vw;
   }
 }

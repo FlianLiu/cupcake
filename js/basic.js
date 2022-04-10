@@ -1,3 +1,4 @@
+// compute offsetY and detect elements is scrolled
 const nav = document.getElementById('navigation');
 const footer = document.getElementsByTagName("footer")[0];
 const tags = document.getElementsByClassName("tagged");
@@ -62,3 +63,16 @@ window.addEventListener('mousemove', e=> {
     items[i].style.transform = `translateX(${delta.x}px) translateY(${delta.y}px)`;
     }
 })
+
+// navigation burger event
+const burgers = document.getElementsByClassName('burger');
+const navList = document.getElementById('navList');
+const closeBtn = document.getElementById('close');
+for (let i=0; i<burgers.length; i++) {
+  burgers[i].addEventListener('click', () => {
+    navList.classList.add('show');
+  });
+}
+closeBtn.addEventListener('click', () => {
+  navList.classList.remove('show');
+});

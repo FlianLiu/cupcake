@@ -212,3 +212,127 @@
     opacity: 1;
   }
 }
+
+/* RWD */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  #christmas .textBox {
+    margin-left: 5vw;
+  }
+  #halloween .textBox {
+    margin-left: 10vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 15px;
+  }
+  .container-full {
+    min-height: auto;
+  }
+  .container-full .main {
+    padding: 0 2rem;
+    height: calc(100vh - 80px);
+  }
+  .container-full .main::before, .main .decoration {
+    height: 360px;
+  }
+  .imgBox .img {
+    min-width: 240px;
+    min-height: 360px;
+  }
+  #christmas .textBox {
+    width: 40vw;
+    margin-left: 5vw;
+  }
+  #halloween .textBox {
+    margin-left: 5vw;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 15px;
+  }
+  .container-full {
+    min-height: auto;
+  }
+  .container-full .main {
+    padding: 0 2rem;
+    height: calc(100vh - 80px);
+  }
+  .container-full .main::before, .main .decoration {
+    height: 360px;
+  }
+  #christmas .imgBox, #halloween .imgBox {
+    position: absolute;
+    right: -50px;
+    z-index: 1;
+  }
+  #christmas .imgBox::before, #halloween .imgBox::before {
+    display: none;
+  }
+  .imgBox .img {
+    min-width: 240px;
+    min-height: 360px;
+  }
+  #christmas .textBox {
+    margin-left: 5vw;
+    z-index: 2;
+  }
+  #halloween .textBox {
+    margin-left: 5vw;
+    z-index: 2;
+  }
+  #halloween .textBox > h6 {
+    color: var(--main-white-color);
+    font-weight: 200;
+  }
+  #halloween .textBox .date {
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  html {
+    font-size: 15px;
+  }
+  .container-full {
+    min-height: auto;
+  }
+  .container-full .main {
+    padding: 0 2rem;
+    height: calc(100vh - 80px);
+  }
+  .container-full .main::before, .main .decoration {
+    height: 360px;
+  }
+  #christmas .imgBox, #halloween .imgBox {
+    transform: scale(.5) rotate(5deg);
+    position: absolute;
+    bottom: 20px;
+    right: -40px;
+    z-index: 1;
+  }
+  #christmas .imgBox::before, #halloween .imgBox::before {
+    display: none;
+  }
+  .imgBox .img {
+    min-width: 240px;
+    min-height: 360px;
+  }
+  #christmas .textBox {
+    margin-left: 5vw;
+    z-index: 2;
+  }
+  #halloween .textBox {
+    margin-left: 5vw;
+    z-index: 2;
+  }
+  #halloween .textBox > h6 {
+    color: var(--main-white-color);
+    font-weight: 200;
+  }
+  #halloween .textBox .date {
+    opacity: 0.8;
+  }
+}
