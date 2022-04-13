@@ -48,6 +48,7 @@
 /* common attributes */
 .container-full .main{
   height: calc(100vh - 100px);
+  min-height: 550px;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -228,9 +229,6 @@
   html {
     font-size: 15px;
   }
-  .container-full {
-    min-height: auto;
-  }
   .container-full .main {
     padding: 0 2rem;
     height: calc(100vh - 80px);
@@ -239,6 +237,8 @@
     height: 360px;
   }
   .imgBox .img {
+    /* max-width: 290px;
+    max-height: 390px; */
     min-width: 240px;
     min-height: 360px;
   }
@@ -273,6 +273,8 @@
     display: none;
   }
   .imgBox .img {
+    width: 50vw;
+    max-height: 360px;
     min-width: 240px;
     min-height: 360px;
   }
@@ -297,20 +299,24 @@
     font-size: 15px;
   }
   .container-full {
-    min-height: auto;
+    min-height: 400px;
   }
   .container-full .main {
     padding: 0 2rem;
+    min-height: 400px;
     height: calc(100vh - 80px);
   }
   .container-full .main::before, .main .decoration {
     height: 360px;
   }
+  #christmas {
+    min-height: 480px;
+  }
   #christmas .imgBox, #halloween .imgBox {
     transform: scale(.5) rotate(5deg);
     position: absolute;
     bottom: 20px;
-    right: -40px;
+    right: -80px;
     z-index: 1;
   }
   #christmas .imgBox::before, #halloween .imgBox::before {

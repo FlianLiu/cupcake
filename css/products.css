@@ -4,6 +4,7 @@
 }
 #banner .main {
   height: calc(100vh - 100px);
+  min-height: 550px;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
@@ -22,6 +23,7 @@
 }
 #banner .main .inner > h2, #banner .main .inner > h6, #banner .main::before, #banner .items {
   opacity: 0;
+  text-align: center;
 }
 #banner .main .inner > h2, #banner .main .inner > h6 {
   animation: showIn .5s .7s ease forwards;
@@ -312,13 +314,14 @@
   #banner .inner > h6, #seasonLimit .inner > h6, #moreCakes .inner > h6 {
     margin-top: 0;
     margin-bottom: 7vh;
+    text-align: center;
   }
   #moreCakes {
     height: auto;
   }
   #moreCakes .items .box {
-    width: 40vw;
-    height: 40vw;
+    width: 42vw;
+    height: 42vw;
     margin-bottom: 4vw;
   }
 }
