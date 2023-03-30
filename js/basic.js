@@ -1,4 +1,4 @@
-// compute offsetY and detect elements is scrolled
+// compute offsetY and detecting elements has been scrolled
 const nav = document.getElementById('navigation');
 const footer = document.getElementsByTagName("footer")[0];
 const tags = document.getElementsByClassName("tagged");
